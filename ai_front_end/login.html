@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Blog Generator - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation  -->
+
+    <nav class="bg-gray-800 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between">
+            <div class="flex-shrink-0">
+              <h1 class="text-white text-2xl font-bold">AI Blog Generator</h1>
+            </div>
+            <div class="flex-1 flex justify-end">
+              <a href="#" class="ml-4 text-white hover:text-gray-300">Logout</a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full transition-transform transform hover:scale-105 flex flex-col  ">
+        
+            <!-- Login Text -->
+            <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+        
+        
+            <!-- Form of the Login -->
+            <form>
+                <div class="mb-4">
+                <label class="block text-gray-700 font-bold mb-2" for="email">
+                    Email
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email"
+                >
+                </div>
+                <div class="mb-6">
+                <label class="block text-gray-700 font-bold mb-2" for="password">
+                    Password
+                </label>
+                <input
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                    id="password"
+                    type="password"
+                    placeholder="Enter your password"
+                >
+                <a href="#" class="text-sm text-blue-500 hover:text-blue-700">Forgot Password?</a>
+                </div>
+                <div class="flex items-center justify-between">
+                <button
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit"
+                >
+                    Sign In
+                </button>
+                <a
+                    class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+                    href="#"
+                >
+                    Create an Account
+                </a>
+                </div>
+            </form>
+
+
+
+            <!-- Additional Way of Login  -->
+            <div class="mt-6 text-center">
+                <span class="text-gray-700">or continue with</span>
+                <div class="mt-2 flex justify-center space-x-4">
+                <button
+                    class="flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 focus:outline-none focus:shadow-outline"
+                
+                    >
+                    <!-- Facebook Icon SVG  -->
+                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24">
+                    <path fill="#fff" d="M22.675 0H1.325C.593 0 0.593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.675V1.325C24.593 23.407 0 22.675 0z"/>
+                  </svg>
+                    Facebook
+                </button>
+                <button
+                    class="flex items-center justify-center rounded-full bg-red-500 hover:bg-red-700 text-white py-2 px-4 focus:outline-none focus:shadow-outline"
+                >
+                <!-- Google Icon SVG  -->
+                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24">
+                    <path fill="" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.561 18.456c-2.262-1.663-3.94-3.75-4.974-6.266-1.034-2.517-.935-5.022.303-7.524l2.236 2.225c-.63 1.643-.695 3.44-.197 5.202.498 1.762 1.533 3.242 3.098 4.445l-1.84 2.87zm7.561-5.656c-.584-1.296-1.834-2.214-3.361-2.414-1.527-.201-3.115.398-4.161 1.567-1.046 1.17-1.302 2.846-.771 4.242l2.236-2.225c.404-.402.991-.602 1.561-.562.57.04 1.09.29 1.456.736l2.236-2.225z"/>
+                  </svg>
+                    Google
+                </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

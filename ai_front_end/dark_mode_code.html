@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg-gray-800 py-4 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between">
+            <div class="flex-shrink-0">
+              <h1 class="text-white text-2xl font-bold">AI Blog Generator</h1>
+            </div>
+            <div class="flex-1 flex justify-end">
+              <a href="#" class="ml-4 text-white hover:text-gray-300">Login</a>
+              <a href="#" class="ml-4 text-white hover:text-gray-300">Sign Up</a>
+              <button id="toggle-dark-mode" class="ml-4 text-white hover:text-gray-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="max-w-3xl mx-auto my-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg md:p-8 p-4">
+        <div class="md:p-8 p-4">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Welcome to AI Blog Generator</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-6">
+            AI Blog Generator is a powerful tool that converts YouTube videos into well-written blog posts. Simply enter the YouTube link, and our AI will analyze the video content and generate a compelling blog post for you.
+          </p>
+          <div class="mb-6">
+            <input type="text" placeholder="Enter YouTube Link" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-300">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mt-2 w-full md:w-auto">Generate</button>
+          </div>
+          <div class="hidden" id="loading">
+            <div class="flex justify-center items-center">
+              <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500 dark:border-blue-600"></div>
+              <span class="ml-3 text-gray-700 dark:text-gray-300">Generating blog post...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="max-w-3xl mx-auto my-8">
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Generated Blog Post</h2>
+          <div id="blog-content" class="text-gray-700 dark:text-gray-300 leading-relaxed">fffdsfasfafadf</div>
+        </div>
+      </div>
+
+
+
+      <script>
+        const toggleDarkMode = document.getElementById('toggle-dark-mode');
+        const html = document.documentElement;
+      
+        toggleDarkMode.addEventListener('click', () => {
+          html.classList.toggle('dark');
+        });
+      </script>
+</body>
+</html>
